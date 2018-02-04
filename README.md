@@ -2,8 +2,11 @@
 Files from ansible course
 To work with VMs we need to setup ssh connection. Firtsly, create id_rsa.pub key on the control server, then copy ssh fingerprint to all authentification_hosts file.
 Please be sure that /usr/bin/python is installed or use ansible_python_interpreter=/usr/bin/python3 in inventory file.
+sudo apt-get install -y python
+
 
 grep -rnw '/etc/ansible' -e '192.168.60.4' -  grep recursivly directory for text pattern "192.168.60.4"
+ssh-keygen -t rsa -b 4096 -C "huk10111991@gmail.com" - generate ssh keys
 
 Inventory:
 ansible --list-hosts all
