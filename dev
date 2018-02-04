@@ -1,4 +1,4 @@
-[loadbalacer]
+[loadbalancer]
 lb1 ansible_host=174.138.4.40
 
 [webserver]
